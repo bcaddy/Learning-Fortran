@@ -2,7 +2,7 @@ PROGRAM orbits
 IMPLICIT NONE !requires me to declare all variables
 !   Purpose:
 !       To calculate the distance between the center of the earth and a satalite with varying angles
-!       Source: Exercise
+!       Source: Exercise 4-15
 
 !   Parameter Decrations
 REAL, PARAMETER :: pi = 3.141592653 ! pi
