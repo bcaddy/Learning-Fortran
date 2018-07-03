@@ -1,0 +1,50 @@
+Standard debugging compile settings:
+
+gfortran -std=f95 -Wextra -Wall -pedantic -fcheck=all -Og -fbacktrace 
+
+
+High performance compile options
+
+gfortran -O3 
+
+
+-fbounds-check  !checks array bounds, is included in -fcheck=all
+-static			!compiles all libraries into the executable 
+-O 				!basic optimization, still compiles fairly quickly
+-O2				!more optimization, takes longer to compile
+-O3				!maximize performance, long compile times
+-O0				!fast compiling, very little optimization. This is the DEFAULT
+-Os				!optimize for size
+-Ofast 			!disregard strict standards compliance, results in very fast code that isn't necessarily standard
+-Og				!optimize for debugging
+
+
+Basic Usage
+
+GNU Fortran is used to compile a source file, source.f90 to an object file, object.o or an executable.
+Along the way it generates module description files for the modules it encounters. These files are named 
+nameofmodule.mod If a module is used, gfortran will read from these same files.
+
+In order to compile the source file source.f90 one would run:
+
+gfortran -c source.f90
+
+The output file will automatically be named source.o This is an object file, which cannot be executed.
+
+Once you have compiled some source files, you can link them together with the necessary libraries to 
+generate an executable. This is done as follows:
+
+gfortran -o executable object1.o object2.o ...
+
+where the the executable will be named executable and the objectN.o are object files, which may have 
+been created as above, or equally well by another compiler from sources in a different language. If -o 
+executable is omitted, the executable will be named a.out (on cygwin systems: a.exe . The executable may 
+then be executed like any other program.
+
+One may also skip the separate compilation step, and enter a command such as:
+
+
+gfortran -o executable source1.f90 source2.f90
+which will compile the source files source1.f90 and source2.f90, link and generate the executable executable 
+in one step. You can also put object files on this command line, they will be automatically linked in during 
+the link step.

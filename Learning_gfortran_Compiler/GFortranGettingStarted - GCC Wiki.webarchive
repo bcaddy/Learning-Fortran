@@ -1,0 +1,2211 @@
+bplist00“_WebMainResource_WebSubresources’	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameO\ó<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>GFortranGettingStarted - GCC Wiki</title>
+<script type="text/javascript" src="/moin_static199/common/js/common.js"></script><style></style>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static199/modern/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/moin_static199/modern/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/moin_static199/modern/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/moin_static199/modern/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static199/modern/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="GCC Wiki: GFortranGettingStarted" href="/wiki/GFortranGettingStarted?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=GFortranGettingStarted&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="/wiki/HomePage">
+<link rel="Alternate" title="Wiki Markup" href="/wiki/GFortranGettingStarted?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/wiki/GFortranGettingStarted?action=print">
+<link rel="Search" href="/wiki/FindPage">
+<link rel="Index" href="/wiki/TitleIndex">
+<link rel="Glossary" href="/wiki/WordIndex">
+<link rel="Help" href="/wiki/HelpOnFormatting">
+</head>
+
+<body lang="en" dir="ltr">
+
+<div id="header">
+<div id="logo"><a href="/wiki/HomePage">GCC Wiki</a></div>
+
+<form id="searchform" method="get" action="/wiki/GFortranGettingStarted">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput" style="display: none;">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" class="disabled">
+<input id="titlesearch" name="titlesearch" type="submit" value="Titles" alt="Search Titles" disabled="">
+<input id="fullsearch" name="fullsearch" type="submit" value="Text" alt="Search Full Text" disabled="">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<ul id="username"><li><a href="/wiki/GFortranGettingStarted?action=login" id="login" rel="nofollow">Login</a></li></ul>
+<div id="locationline">
+<div id="interwiki"><span><a href="/wiki/HomePage" rel="nofollow">Self</a></span></div>
+
+<ul id="pagelocation">
+<li><a href="/wiki/GFortranGettingStarted">GFortranGettingStarted</a></li>
+</ul>
+
+</div>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="/wiki/HomePage">HomePage</a></li><li class="wikilink"><a href="/wiki/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="/wiki/FindPage">FindPage</a></li><li class="wikilink"><a href="/wiki/HelpContents">HelpContents</a></li><li class="current"><a href="/wiki/GFortranGettingStarted">GFortranGettingStarted</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/wiki/GFortranGettingStarted?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/wiki/GFortranGettingStarted?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/wiki/GFortranGettingStarted">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="" class="disabled">Delete Page</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Subscribe User</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Remove Spam</option>
+<option value="show" disabled="" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h1 id="Getting_started_with_gfortran">Getting started with gfortran</h1>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line874">You have downloaded and installed gfortran (or it was already installed with your system), and now you would like to use it. This page is here to explain the basic use of the compiler and to teach you its most commonly used options. Content is in increasing order of accointance with the compiler. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-6"></span>
+</p><h2 id="Getting_one_file_compiled">Getting one file compiled</h2>
+<span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><p class="line874">If your program is only in one file (a hello-world program, or any simple code that doesn't require external libraries), the compilation is straightforward: <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span></p><p class="line867"><span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span></p><pre><span class="anchor" id="line-1"></span>gfortran myfile.f</pre><span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><p class="line862">gfortran will then create an executable from your code. This executable will be called <tt>a.out</tt> on unix systems and <tt>a.exe</tt> on Windows. Of course, you might consider giving it a more appropriate name: you can specify the name you want with the <tt>-o</tt> option: <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p><p class="line867"><span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span></p><pre><span class="anchor" id="line-1-1"></span>gfortran myfile.f -o program.exe</pre><span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-21"></span>
+</p><h2 id="Getting_one_file_compiled:_static_linking">Getting one file compiled: static linking</h2>
+<span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span><p class="line874">_This section does not apply to Windows users, except for Cygwin users with gcc4-4.3.2-2 or later._ <span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span></p><p class="line862">gfortran is composed of two main parts: the compiler, which creates the executable program from your code, and the library, which is used when you run your program afterwards. That explains why, if gfortran is installed in a non-standard directory, it may compile your code fine but the executable may fail with an error message like  <tt>library&nbsp;not&nbsp;found</tt> . One way to avoid this (more ideas can be found on the binaries page) is to use the so-called "static linking", available with option <tt>-static</tt>  gfortran then put the library code inside the program created, thus enabling it to run without the library present (like, on a computer where gfortran is not installed). Complete example is: <span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span></p><p class="line867"><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span></p><pre><span class="anchor" id="line-1-2"></span>gfortran -static myfile.f -o program.exe</pre><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-32"></span>
+</p><h2 id="Free-form.2C_fixed-form_and_file_extensions">Free-form, fixed-form and file extensions</h2>
+<span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span><p class="line874">By default, gfortran is aware of a few file extensions, and its action depends on the extension of the file you ask it to compile. Examples: <span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span></p><ul><li><p class="line862">if the file is named <tt>code.f</tt>  gfortran supposes it is fixed-form source, with no preprocessing needed. <span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span></p></li><li class="gap"><p class="line862">if the file is named <tt>code.f90</tt>  gfortran supposes it is free-form source, with no preprocessing needed. <span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span></p></li><li class="gap"><p class="line862">if the file is named <tt>code.F</tt>  gfortran supposes it is fixed-form source and performs preprocessing. <span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span></p></li><li class="gap"><p class="line862">if the file is named <tt>code.F90</tt>  gfortran supposes it is free-form source and preprocess it. <span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span></p></li></ul><p class="line862">There are other extensions recognized, such as: <tt>.f95</tt> is the same as <tt>.f90</tt>  and <tt>.F95</tt> is the same as <tt>.F90</tt>  <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span></p><p class="line862">Of course, you can override gfortran's default, with options <tt>-ffree-form</tt> and <tt>-ffixed-form</tt> (many gfortran options are named <tt>-f''=option-name</tt> '. For example, if you have a free-form code named bessel.f, you can compile it with <span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span></p><p class="line867"><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span></p><pre><span class="anchor" id="line-1-3"></span>gfortran -ffree-form bessel.f -o bessel.exe</pre><span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-53"></span>
+</p><h2 id="Compiling_programs_in_more_than_one_file">Compiling programs in more than one file</h2>
+<span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><p class="line862">Let's have an example in which the code is split into three different files: <tt>aux.f</tt>  <tt>diag.f</tt> and <tt>flow.f</tt>  with the main program in <tt>flow.f</tt>  You need first to compile all files other than the main program into<em>object files</em> and then compile the main code together with these object files: <span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span></p><p class="line867"><span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span></p><pre><span class="anchor" id="line-1-4"></span>gfortran -c aux.f
+<span class="anchor" id="line-2"></span>gfortran -c diag.f
+<span class="anchor" id="line-3"></span>gfortran flow.f aux.o diag.o -o flow.exe</pre><span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span><p class="line862">The <tt>-c</tt> option tells gfortran to create an object file (named <tt>aux.o</tt> if the code was <tt>aux.f</tt> , to be linked later with the main program  <tt>gfortran&nbsp;flow.f&nbsp;aux.o&nbsp;diag.o&nbsp;-o&nbsp;flow.exe</tt> . <span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span></p><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-66"></span>
+</p><h2 id="Compiling_programs_with_external_libraries">Compiling programs with external libraries</h2>
+<span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-69"></span>
+</p><h2 id="Standard_conformance_and_other_warnings">Standard conformance and other warnings</h2>
+<span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span><p class="line862">The standard against which the compiler will check your code is to be specified with the <tt>-std</tt> option. Possible values are, <tt>f95</tt> (Fortran 95), <tt>f2003</tt> (Fortran 2003, <tt>f2008</tt> (Fortran 2008), <tt>gnu</tt> (default, Fortran with GNU extensions) and <tt>legacy</tt> (which enables all possible extensions, even the ugly, old ones that you probably don't want). To compile Fortran 95 code, for example: <span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span></p><p class="line867"><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span></p><pre><span class="anchor" id="line-1-5"></span>gfortran -std=f95 mycode.f</pre><span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><p class="line862">A few more switches should be added if you want gfortran to warn you about all possible standard violations: <tt>-Wextra</tt>  <tt>-Wall</tt> and <tt>-pedantic</tt>  This is <strong>highly</strong> recommended, enabling you to check for possible errors in your code, such as syntax errors, unused variables, etc. The following is what you should use in most cases: <span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span></p><p class="line867"><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span></p><pre><span class="anchor" id="line-1-6"></span>gfortran -std=f95 -Wextra -Wall -pedantic mycode.f</pre><span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span><p class="line874">Another useful switch is -fbounds-check which causes array indices to be checked. Note that as of this writing, substring operations <span class="anchor" id="line-84"></span>are <strong>not</strong> checked. <span class="anchor" id="line-85"></span></p><hr><p class="line874"> <span class="anchor" id="line-86"></span>
+</p><h2 id="Compiling_a_mixed_C-Fortran_program_.28main_program_is_Fortran.29">Compiling a mixed C-Fortran program (main program is Fortran)</h2>
+<span class="anchor" id="line-87"></span><p class="line874">Consider this fortran code <span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span></p><pre><span class="anchor" id="line-1-7"></span>  program f_prog
+<span class="anchor" id="line-2-1"></span>    integer :: i,j(2)
+<span class="anchor" id="line-3-1"></span>    real :: r
+<span class="anchor" id="line-4"></span>    character(len=10) :: str
+<span class="anchor" id="line-5"></span>
+<span class="anchor" id="line-6"></span>    i = 4711
+<span class="anchor" id="line-7"></span>    j = (/13, 14/)
+<span class="anchor" id="line-8"></span>    r = 4712.0
+<span class="anchor" id="line-9"></span>    str = "abcd"
+<span class="anchor" id="line-10"></span>    call c_sub(trim(str)//char(0), i, r, j)
+<span class="anchor" id="line-11"></span>  end program f_prog</pre><span class="anchor" id="line-101"></span><p class="line874">and this C code <span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span></p><pre><span class="anchor" id="line-1-8"></span>#include &lt;stdio.h&gt;
+<span class="anchor" id="line-2-2"></span>  void c_sub_(char *str, int *i, float *r, int j[], int str_len){
+<span class="anchor" id="line-3-2"></span>    printf("%s %d %d %f %d %d\n", str, str_len, *i, *r, j[0], j[1]);
+<span class="anchor" id="line-4-1"></span>  }</pre><span class="anchor" id="line-108"></span><p class="line874">Notes: gfortran adds a trailing underscore to the identifier, hence the c_sub_. <span class="anchor" id="line-109"></span>Fortran always passes pointers. Strings cause an additional int argument at the <span class="anchor" id="line-110"></span>end of the argument list. They must be converted to C conventions, aka trimmed <span class="anchor" id="line-111"></span>and with an additional char(0) at the end.<br>
+ <span class="anchor" id="line-112"></span>Be carefull when you pass defined types; make sure you understand what the <tt>-fpack-derived</tt> <span class="anchor" id="line-113"></span>compiler switch does.<br>
+ <span class="anchor" id="line-114"></span>Arrays are passed as pointers, too. Do *NOT* provide an interface, otherwise you <span class="anchor" id="line-115"></span>get an array descriptor which is a complicated thing. Do not get confused about <span class="anchor" id="line-116"></span>indices, fortran starts at 1, C always at 0.<br>
+ <span class="anchor" id="line-117"></span>You compile these examples like: <span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><span class="anchor" id="line-122"></span></p><pre><span class="anchor" id="line-1-9"></span>  gfortran -c fprog.f90
+<span class="anchor" id="line-2-3"></span>  gcc -c -fno-leading-underscore csub.c
+<span class="anchor" id="line-3-3"></span>  gfortran fprog.o csub.o -o fprog</pre><span class="anchor" id="line-123"></span><p class="line874">Important here is the -fno-leading-underscore, otherwise the linker would see <span class="anchor" id="line-124"></span><em>c_sub</em>instead of c_sub_ which we need.<br>
+ <span class="anchor" id="line-125"></span>Output: <span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span></p><pre><span class="anchor" id="line-1-10"></span>./fprog
+<span class="anchor" id="line-2-4"></span>abcd 5 4711 4712.000000 13 14</pre><span class="anchor" id="line-130"></span><p class="line867"></p><hr><p class="line874"> <span class="anchor" id="line-131"></span>
+</p><h2 id="Compiling_a_mixed_C-Fortran_program_.28main_program_is_C.29">Compiling a mixed C-Fortran program (main program is C)</h2>
+<span class="anchor" id="line-132"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">None: GFortranGettingStarted  (last edited 2013-08-09 12:13:17 by <span title="Thomas Schwinge @ 217.84.4.40[217.84.4.40]"><a href="/wiki/tschwinge" title="Thomas Schwinge @ 217.84.4.40[217.84.4.40]">tschwinge</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/wiki/GFortranGettingStarted?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/wiki/GFortranGettingStarted?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/wiki/GFortranGettingStarted">
+<div>
+    
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="show">More Actions:</option><option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="" class="disabled">Rename Page</option>
+<option value="DeletePage" disabled="" class="disabled">Delete Page</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Subscribe User</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Remove Spam</option>
+<option value="show" disabled="" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+
+
+
+</body></html>Ytext/htmlUUTF-8_/https://gcc.gnu.org/wiki/GFortranGettingStartedP•"‘_WebResourceResponseOm;//
+// MoinMoin commonly used JavaScript functions
+//
+
+// We keep here the state of the search box
+searchIsDisabled = false;
+
+function searchChange(e) {
+    // Update search buttons status according to search box content.
+    // Ignore empty or whitespace search term.
+    var value = e.value.replace(/\s+/, '');
+    if (value == '' || searchIsDisabled) { 
+        searchSetDisabled(true);
+    } else {
+        searchSetDisabled(false);
+    }
+}
+
+function searchSetDisabled(flag) {
+    // Enable or disable search
+    document.getElementById('fullsearch').disabled = flag;
+    document.getElementById('titlesearch').disabled = flag;
+}
+
+function searchFocus(e) {
+    // Update search input content on focus
+    if (e.value == search_hint) {
+        e.value = '';
+        e.className = '';
+        searchIsDisabled = false;
+    }
+}
+
+function searchBlur(e) {
+    // Update search input content on blur
+    if (e.value == '') {
+        e.value = search_hint;
+        e.className = 'disabled';
+        searchIsDisabled = true;
+    }
+}
+
+function actionsMenuInit(title) {
+    // Initialize action menu
+    for (i = 0; i < document.forms.length; i++) {
+        var form = document.forms[i];
+        if (form.className == 'actionsmenu') {
+            // Check if this form needs update
+            var div = form.getElementsByTagName('div')[0];
+            var label = div.getElementsByTagName('label')[0];
+            if (label) {
+                // This is the first time: remove label and do buton.
+                div.removeChild(label);
+                var dobutton = div.getElementsByTagName('input')[0];
+                div.removeChild(dobutton);
+                // and add menu title
+                var select = div.getElementsByTagName('select')[0];
+                var item = document.createElement('option');
+                item.appendChild(document.createTextNode(title));
+                item.value = 'show';
+                select.insertBefore(item, select.options[0]);
+                select.selectedIndex = 0;
+            }
+        }
+    }
+}
+
+// use this instead of assigning to window.onload directly:
+function addLoadEvent(func) {
+    // alert("addLoadEvent " + func)
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        }
+    }
+}
+
+// copy from fckeditor browser check code (fckeditor.js:298, function : FCKeditor_IsCompatibleBrowser)
+function can_use_gui_editor() {
+    var sAgent = navigator.userAgent.toLowerCase() ;
+
+    // Internet Explorer 5.5+
+    if ( /*@cc_on!@*/false && sAgent.indexOf("mac") == -1 )
+    {
+        var sBrowserVersion = navigator.appVersion.match(/MSIE (.\..)/)[1] ;
+        return ( sBrowserVersion >= 5.5 ) ;
+    }
+
+    // Gecko (Opera 9 tries to behave like Gecko at this point).
+    if ( navigator.product == "Gecko" && navigator.productSub >= 20030210 && !( typeof(opera) == 'object' && opera.postError ) )
+        return true ;
+
+    // Opera 9.50+
+    if ( window.opera && window.opera.version && parseFloat( window.opera.version() ) >= 9.5 )
+        return true ;
+
+    // Adobe AIR
+    // Checked before Safari because AIR have the WebKit rich text editor
+    // features from Safari 3.0.4, but the version reported is 420.
+    if ( sAgent.indexOf( ' adobeair/' ) != -1 )
+        return ( sAgent.match( / adobeair\/(\d+)/ )[1] >= 1 ) ; // Build must be at least v1
+
+    // Safari 3+
+    if ( sAgent.indexOf( ' applewebkit/' ) != -1 )
+        return ( sAgent.match( / applewebkit\/(\d+)/ )[1] >= 522 ) ;    // Build must be at least 522 (v3)
+
+    return false ;
+
+}
+
+
+function update_edit_links() {
+    // Update editlink according if if the browser is compatible
+    if (can_use_gui_editor() == false){
+        //alert("update_edit_links: can't use gui editor");
+        return;
+    }
+    var editlinks = document.getElementsByName("editlink");
+    for (i = 0; i < editlinks.length; i++) {
+        var link = editlinks[i];
+        href = link.href.replace('editor=textonly','editor=guipossible');
+        link.href = href;
+        //alert("update_edit_links: modified to guipossible");
+    }
+}
+
+
+function add_gui_editor_links() {
+    // Add gui editor link after the text editor link
+    
+    // If the variable is not set or browser is not compatible, exit
+    try {gui_editor_link_href}
+    catch (e) {
+        //alert("add_gui_editor_links: gui_editor_link_href not here");
+        return
+    }
+    if (can_use_gui_editor() == false){
+        //alert("add_gui_editor_links: can't use gui_editor");
+        return;
+    }
+    var all = document.getElementsByName('texteditlink');
+    for (i = 0; i < all.length; i++) {
+        var textEditorLink = all[i];
+        // Create a list item with a link
+        var guiEditorLink = document.createElement('a');
+        guiEditorLink.href = gui_editor_link_href;
+        var text = document.createTextNode(gui_editor_link_text);
+        guiEditorLink.appendChild(text);
+        var listItem = document.createElement('li')
+        listItem.appendChild(guiEditorLink);
+        // Insert in the editbar
+        var editbar = textEditorLink.parentNode.parentNode
+        var nextListItem = textEditorLink.parentNode.nextSibling;
+        editbar.insertBefore(listItem, nextListItem);
+        //alert("add_gui_editor_links: added gui editor link");
+    }
+}
+ 
+
+function show_switch2gui() {
+    // Show switch to gui editor link if the browser is compatible
+    if (can_use_gui_editor() == false) return;
+    
+    var switch2gui = document.getElementById('switch2gui')
+    if (switch2gui) {
+        switch2gui.style.display = 'inline';
+    }
+}
+
+// for long documents with many comments this is expensive to calculate,
+// thus we keep it here:
+comments = null;
+
+function toggleComments() {
+    // Toggle visibility of every tag with class "comment"
+    for (i = 0; i < comments.length; i++){
+        el = comments[i];
+        if ( el.style.display != 'none' ) {
+            el.style.display = 'none';
+        } else {
+            el.style.display = '';
+        }
+    }
+}
+
+function show_toggleComments() {
+    // Show edit bar item for toggling inline comments on/off only if inline comments exist on the page
+    comments = getElementsByClassName('comment', null, document);
+    if (comments.length > 0) {
+        var buttons = getElementsByClassName('toggleCommentsButton', null, document);
+        for (i = 0; i < buttons.length; i++){
+            el = buttons[i];
+            el.style.display = '';
+        }
+    }
+}
+
+
+function load() {
+    // Do not name this "onload", it does not work with IE :-)
+    // TODO: create separate onload for each type of view and set the
+    // correct function name in the html. 
+    // e.g <body onlod='editor_onload()'>
+
+    // login focus
+    if (document.forms['loginform']) {
+        document.forms['loginform'].elements['name'].focus();
+    }
+    
+    // Page view stuff
+    update_edit_links();
+    add_gui_editor_links();
+    
+    // Editor stuff
+    show_switch2gui();
+
+    // Enable menu item "ToggleComments" if inline comments exist
+    show_toggleComments();
+ 
+    // data browser widget
+    dbw_hide_buttons();
+}
+
+
+function before_unload(evt) {
+    // TODO: Better to set this in the editor html, as it does not make
+    // sense elsehwere.
+    // confirmleaving is available when editing
+    try {return confirmleaving();}
+    catch (e) {}
+}
+
+// Initialize after loading the page
+addLoadEvent(load)
+
+// Catch before unloading the page
+window.onbeforeunload = before_unload
+
+function dbw_update_search(dbw_id)
+{
+    var table = document.getElementById(dbw_id+'table');
+    var cell;
+    var shown;
+    var i
+    var cols = table.rows[0].cells.length;
+    var filter = new Array();
+    var dofilter = new Array();
+    var form = document.forms[dbw_id+'form'];
+
+    for (i = 0; i < cols; i++) {
+        dofilter[i] = false;
+        if (form[dbw_id+'filter'+i]) {
+            dofilter[i] = true;
+            filter[i] = form[dbw_id+'filter'+i].value;
+            if (filter[i] == '[all]')
+                dofilter[i] = false;
+            if (filter[i] == '[empty]')
+                filter[i] = '';
+        }
+    }
+
+    for (i = 1; i < table.rows.length; i++) {
+        var show = true;
+        for (col = 0; col < cols; col++) {
+            if (!dofilter[col])
+                continue;
+
+            cell = table.rows[i].cells[col];
+
+            if (filter[col] == '[notempty]') {
+                if (cell.abbr == '') {
+                    show = false;
+                    break;
+                }
+            } else if (filter[col] != cell.abbr) {
+                show = false;
+                break;
+            }
+        }
+        if (show)
+            table.rows[i].style.display = '';
+        else
+            table.rows[i].style.display = 'none';
+    }
+}
+
+function dbw_hide_buttons() {
+    var form;
+    var elem;
+    var name;
+
+    for (var fidx = 0; fidx < document.forms.length; fidx++) {
+        form = document.forms[fidx];
+        for (var eidx = 0; eidx < form.elements.length; eidx++) {
+            elem = form.elements[eidx];
+            name = elem.name;
+            if (name) {
+                if (name.indexOf('dbw.') >= 0 && name.substr(-7) == '.submit')
+                    elem.style.display = 'none';
+            }
+        }
+    }
+}
+
+/*  getElementsByClassName
+    Developed by Robert Nyman, http://www.robertnyman.com
+    Code/licensing: http://code.google.com/p/getelementsbyclassname/ (MIT license)
+    Version: 1.0.1
+*/  
+var getElementsByClassName = function (className, tag, elm){
+    if (document.getElementsByClassName) {
+        getElementsByClassName = function (className, tag, elm) {
+            elm = elm || document;
+            var elements = elm.getElementsByClassName(className),
+                nodeName = (tag)? new RegExp("\\b" + tag + "\\b", "i") : null,
+                returnElements = [],
+                current;
+            for(var i=0, il=elements.length; i<il; i+=1){
+                current = elements[i];
+                if(!nodeName || nodeName.test(current.nodeName)) {
+                    returnElements.push(current);
+                }
+            }
+            return returnElements;
+        };
+    }
+    else if (document.evaluate) {
+        getElementsByClassName = function (className, tag, elm) {
+            tag = tag || "*";
+            elm = elm || document;
+            var classes = className.split(" "),
+                classesToCheck = "",
+                xhtmlNamespace = "http://www.w3.org/1999/xhtml",
+                namespaceResolver = (document.documentElement.namespaceURI === xhtmlNamespace)? xhtmlNamespace : null,
+                returnElements = [],
+                elements,
+                node;
+            for(var j=0, jl=classes.length; j<jl; j+=1){
+                classesToCheck += "[contains(concat(' ', @class, ' '), ' " + classes[j] + " ')]";
+            }
+            try {
+                elements = document.evaluate(".//" + tag + classesToCheck, elm, namespaceResolver, 0, null);
+            }
+            catch (e) {
+                elements = document.evaluate(".//" + tag + classesToCheck, elm, null, 0, null);
+            }
+            while ((node = elements.iterateNext())) {
+                returnElements.push(node);
+            }
+            return returnElements;
+        };
+    }
+    else {
+        getElementsByClassName = function (className, tag, elm) {
+            tag = tag || "*";
+            elm = elm || document;
+            var classes = className.split(" "),
+                classesToCheck = [],
+                elements = (tag === "*" && elm.all)? elm.all : elm.getElementsByTagName(tag),
+                current,
+                returnElements = [],
+                match;
+            for(var k=0, kl=classes.length; k<kl; k+=1){
+                classesToCheck.push(new RegExp("(^|\\s)" + classes[k] + "(\\s|$)"));
+            }
+            for(var l=0, ll=elements.length; l<ll; l+=1){
+                current = elements[l];
+                match = false;
+                for(var m=0, ml=classesToCheck.length; m<ml; m+=1){
+                    match = classesToCheck[m].test(current.className);
+                    if (!match) {
+                        break;
+                    }
+                }
+                if (match) {
+                    returnElements.push(current);
+                }
+            }
+            return returnElements;
+        };
+    }
+    return getElementsByClassName(className, tag, elm);
+};
+
+
+// ===========================================================================
+// The following functions are part of scroll edit textarea on double-click
+//
+// This code is public domain (or primarily public domain).
+// Do whatever you want with it.  In particular, you may release it under
+// GPL 2.0 or incorporate it into projects that use GPL 2.0.
+// -- Radomir Dopieralski and Roger D. Haase
+
+// Debugging helpers
+//  save debugging state in cookie - presence of a cookie means debugging mode is on
+cookiePath = '/';
+function autoScrollSetCookie (){
+    document.cookie = 'autoscrolldebug=on; path=' + cookiePath + '; ';
+}
+function autoScrollDeleteCookie (){
+    var cookie_date = new Date ( );  // current date & time
+    cookie_date.setTime ( cookie_date.getTime() - 1 );
+    document.cookie = 'autoscrolldebug=; expires=' + cookie_date.toGMTString() + '; path=' + cookiePath + '; ';
+}
+function autoScrollGetCookie (){
+    var results = document.cookie.match ( '(^|;) ?' + "autoscrolldebug" + '=([^;]*)(;|$)' );
+    if ( results ) {
+        return ( unescape ( results[2] ) );
+    } else {
+        return null;
+    }
+}
+// turn on debugging mode by previewing, saving or reading a page with "auto scroll debug on" within an h1 header
+// = My Page auto scroll debug on =
+// once set on,debug mode says on for current session or until turned off with
+// = My Page auto scroll debug off =
+autoScrollDebugOn = 0;
+// this function executed on page load
+function turnDebugOnOrOff () {
+    // set global variable for use by cookie functions
+    cookiePath = document.getElementsByName('edit_on_doubleclick')[0].content;
+    var hOnes = document.getElementsByTagName('H1');
+    for (var i = 0; i < hOnes.length; ++i) {
+        var header = hOnes[i].textContent || hOnes[i].innerText;
+        if (header.match ('auto scroll debug on')) {
+            autoScrollSetCookie ();
+        }
+        if (header.match ('auto scroll debug off')) {
+            autoScrollDeleteCookie ();
+        }
+    }
+    if (autoScrollGetCookie ()) {
+        autoScrollDebugOn = 1;
+    } else {
+        autoScrollDebugOn = 0;
+    }
+}
+
+// functions used for testing - mouseover tooltip with tagName and scroll line number
+function doMouseOver(e) {
+    var targ = getNode(e);
+    targ.title = 'tagName='+targ.tagName+'  line='+targ.scrollLine;
+}
+function doMouseOut(e) {
+    var targ = getNode(e);
+    targ.removeAttribute('title');
+}
+// add leading zeros to hours, minutes, seconds, milliseconds
+function leadingZeros (nbr,count) { 
+    var strNbr = nbr + '';
+    while (strNbr.length < count) {
+        strNbr = "0" + strNbr; 
+    }
+    return strNbr;
+}
+// format hours, minutes, seconds, and ms
+function formatTime (t) {
+    var sHours = leadingZeros (t.getHours(), 2);
+    var sMinutes = leadingZeros (t.getMinutes (), 2);
+    var sSeconds = leadingZeros (t.getSeconds (), 2);
+    var sMilliseconds = leadingZeros (t.getMilliseconds (), 3);
+    return sHours + ':' + sMinutes + ':' + sSeconds + ':' + sMilliseconds;
+}
+
+// this variable is available as easy way to display trace info
+autoDebugTrace = '';
+function showStartStopTimes (startTime) {
+    // display a message with start and end times at top of page
+    var endTime = new Date();
+    var tStart ='auto scroll debug on -- Initialization start H:M:S:ms=' + formatTime (startTime);
+    var tEnd = '  end H:M:S:ms=' + formatTime (endTime);
+    var timingMsg = document.createElement ('P');
+    timingMsg.innerHTML = tStart + tEnd;
+    timingMsg.style. color = "red";
+    var contentDiv;
+    if (document.getElementById ('preview')) {
+        contentDiv = document.getElementById ('preview');
+    } else {
+        contentDiv = document.getElementById ('content');
+    }
+    contentDiv.insertBefore (timingMsg, contentDiv.firstChild);
+    // display trace info is there is any
+    if (autoDebugTrace) {
+        alert(autoDebugTrace);
+    }
+}
+// end of debugging helpers
+
+// this scrolls the textarea after a doubleclick - jumpLine is scroll-to line
+function scrollTextarea(jumpLine) {
+    var txtBox = document.getElementById('editor-textarea');
+    scroll(0,0); 
+    if (txtBox) {
+        // Calculate the cursor position - IE supports innerText, not textContent
+        var textLines = txtBox.textContent || txtBox.innerText;
+        textLines = textLines.match(/(.*(\r\n|\r|\n))/g);
+        var scrolledText = '';
+        for (var i = 0; i < textLines.length && i < jumpLine; ++i) {
+            scrolledText += textLines[i];
+        }
+        txtBox.focus();
+        if (txtBox.setSelectionRange) {
+            // Standard-compliant browsers
+            // Move the cursor
+            txtBox.setSelectionRange(scrolledText.length, scrolledText.length);
+            // Calculate how far to scroll, by putting the text that is to be
+            // above the fold in a DIV, and checking the DIV's height.
+            var scrollPre = document.createElement('pre');
+            txtBox.parentNode.appendChild(scrollPre);
+            var style = window.getComputedStyle(txtBox, '');
+            scrollPre.style.lineHeight = style.lineHeight;
+            scrollPre.style.fontFamily = style.fontFamily;
+            scrollPre.style.fontSize = style.fontSize;
+            scrollPre.style.padding = 0;
+            scrollPre.style.letterSpacing = style.letterSpacing;
+            // Different browsers call this value differently:
+            try { scrollPre.style.whiteSpace = "-moz-pre-wrap"; } catch(e) {}
+            try { scrollPre.style.whiteSpace = "-o-pre-wrap"; } catch(e) {}
+            try { scrollPre.style.whiteSpace = "-pre-wrap"; } catch(e) {}
+            try { scrollPre.style.whiteSpace = "pre-wrap"; } catch(e) {}
+            scrollPre.textContent = scrolledText;
+            txtBox.scrollTop = scrollPre.scrollHeight-100;
+            scrollPre.parentNode.removeChild(scrollPre);
+        } else if (txtBox.createTextRange) {
+            // Microsoft Internet Explorer
+            // We don't need to scroll, it will do it automatically, just move
+            // the cursor.
+            var range = txtBox.createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', scrolledText.length);
+            range.moveStart('character', scrolledText.length);
+            range.select();
+            txtBox.__column = 1;
+        }
+    } 
+}
+
+// stop event bubbling
+function stopBubbling(e) {
+    if (e.stopPropagation) {
+        e.stopPropagation(); 
+    }
+    e.cancelBubble = true;
+}
+
+// stop bubbling and return event node 
+function getNode(e) {
+    // window.event and e.srcElement are IE
+    var e = e || window.event;
+    var targ = e.target || e.srcElement;
+    if (targ.nodeType == 3) {
+        // workaround safari
+        targ = targ.parentNode;
+    }
+    stopBubbling(e);
+    return targ;
+}
+
+// add action=edit and scrollLine to document.location
+function doActionEdit(e) {
+    var targ = getNode(e);
+    // MoinMoin counts starting with 1, scrollTextarea starts with 0
+    document.location.search = '?action=edit&line='+(targ.scrollLine-1);
+}
+
+// scroll textarea on this page
+function doTextareaScroll(e) {
+    var targ = getNode(e);
+    scrollTextarea(targ.scrollLine-1);
+}
+
+// This is the function that registers double clicks.
+// isPreview is true if the current page is an edit draft preview
+function setCallback(node, line, isPreview) {
+    if (node.scrollLine) {
+        // this node already processed
+        return;
+    } else {
+        node.scrollLine = line;
+        if(window.addEventListener){ 
+            if (isPreview) {
+                node.addEventListener('dblclick',doTextareaScroll,false);
+            } else {
+                node.addEventListener('dblclick',doActionEdit,false);
+            }
+            if (autoScrollDebugOn) {
+                node.addEventListener('mouseover', doMouseOver,false); 
+                node.addEventListener('mouseout',doMouseOut,false); 
+            }
+        } else {
+            // IE
+            if (isPreview) {
+                node.attachEvent('ondblclick',doTextareaScroll);
+            } else {
+                node.attachEvent('ondblclick',doActionEdit);
+            }
+            if (autoScrollDebugOn) {
+                node.attachEvent('onmouseover', doMouseOver,false); 
+                node.attachEvent('onmouseout',doMouseOut,false);
+            }
+        }
+    }
+}
+
+// walk part of DOM and add doubleclick function to all nodes with tagNames
+function walkDom (someNode, lineNbr, isPreview, nextId, topId) {
+
+    //~ // handle special cases of paragraph on line after <<TOC>> and ---- (horizontal rule)
+    //~ //   But this effects paragraphs on multiple lines: doubleclick goes to paragraph bottom rather than top.
+    //~ //   Seems best to live with TOC and HR problem and wait for Moin2.
+    //~ var next1, next2, next3;
+    //~ var nextNbr = 'line-' + (lineNbr-0+1);
+    //~ if (someNode.parentNode.tagName == 'P' && someNode.parentNode.scrollLine) {
+        //~ next1 = someNode.nextSibling;
+        //~ if (next1 && next1.tagName != 'SPAN') {
+            //~ next2 = next1.nextSibling;
+        //~ }
+        //~ if (next2 && next2.id == nextNbr) {
+            //~ alert('Correcting scrollLine='+lineNbr);
+            //~ someNode.parentNode.scrollLine = lineNbr;
+            //~ return;
+        //~ }
+    //~ }
+    
+    var ie8LoopCounter = 0;
+    var doChild = true;
+    while (!(someNode.id == nextId) && !(someNode.id == topId)) {
+        // workaround IE8 bug:  http://moinmo.in/MoinMoinBugs/FormInsideTableCausesIE8ScriptLoop
+        ie8LoopCounter += 1;
+        if (ie8LoopCounter > 10000) {
+            return;
+        }
+        
+        // add children, add siblings, add parent
+        if (doChild && someNode.firstChild) {
+            someNode = someNode.firstChild;
+        } else {
+            doChild = true;
+            if (someNode.nextSibling) {
+                someNode = someNode.nextSibling;
+            } else {
+                if (someNode.parentNode.nextSibling) {
+                someNode = someNode.parentNode.nextSibling;
+                } else {
+                    doChild = false;
+                    someNode = someNode.parentNode.parentNode;
+                }
+            }
+        }
+        if (doChild && someNode.tagName && !(someNode.id == nextId) && !(someNode.id == topId)) {
+            setCallback(someNode, lineNbr, isPreview);
+        }
+    }
+}
+
+// run during page load when user may edit current page OR is viewing draft preview
+function setSpanTags(isPreview) {
+    var startTime = new Date();
+    // find all the SPAN tags with an ID beginning with "line-"
+    var spanTags = document.getElementsByTagName('span');
+    var marks = [];
+    for (var i = 0; i < spanTags.length; ++i) {
+        if (spanTags[i].id && spanTags[i].id.substring(0, 5) == 'line-') {
+            marks.push(spanTags[i]);
+        }
+    }
+    var top = document.getElementById('content');
+    var bottom = document.getElementById('bottom');
+    // add expected stopping point to end of array for convenience
+    if (bottom) {
+        marks.push(bottom); 
+    } else {
+        if (autoScrollDebugOn) {
+            alert("auto scroll debug 1: document.getElementById('bottom') failed");
+        }
+    }
+    var skipTo = -1; 
+    // loop through span tags and apply double-click events to appropriate node(s) 
+    for (i = 0; i < marks.length-1; ++i) {
+        var mark = marks[i];
+        // skip span tags generated by embedded parsers
+        if (i > skipTo) {
+            // split the ID into parts: looks like "line-22" or "line-22-1"
+            var lineParts = mark.id.split('-');
+            var line = lineParts[1];
+            if (lineParts.length == 3) {
+                // have found output from embedded parser
+                // find next span id that looks like "line-n" and the "line-n-n" just before it
+                var j = i - 0;
+                while (lineParts.length == 3) {
+                    j++;
+                    lineParts = marks[j].id.split('-');
+                }
+                // determine how many lines, starting line number, and add double-click events
+                var nbrParsedLines = j - i;
+                var parsedLineNbr = lineParts[1] - nbrParsedLines - 1;
+                for (var k = 0; k < nbrParsedLines; ++k) { 
+                    if (marks[i+k] && marks[i+k+1] && marks[i+k+1].id) {
+                        walkDom (marks[i+k], parsedLineNbr+k, isPreview, marks[i+k+1].id, top.id);
+                    } else {
+                        if (autoScrollDebugOn) {
+                            alert('auto scroll debug 2: skipping walkDom, i=' + i + ' k=' + k + ' marks[i].id=' + marks[i].id);
+                        }
+                    }
+                }
+                // done with embedded parser lines, tell main loop to skip these
+                skipTo = j - 1; 
+            } else {
+                // walk part of DOM and apply doubleclick function to every node with a tagname
+                if (marks[i+1] && marks[i+1].id) {
+                    walkDom (mark, line, isPreview, marks[i+1].id, top.id);
+                } else {
+                    if (autoScrollDebugOn) {
+                        alert('auto scroll debug 3: skipping walkDom, i=' + i + ' marks[i].id=' + marks[i].id);
+                    }
+                }
+            }
+        }
+    }
+    if (autoScrollDebugOn && document.getElementById('content'))  {
+        for (i = 0; i < marks.length-1; ++i) {
+            marks[i].innerHTML = ' ' + marks[i].id + ' ';
+            marks[i].style. color = "red";
+        }
+        showStartStopTimes(startTime);
+    }
+}
+
+// test to see if this user has selected or defaulted to edit_on_doubleclick AND
+// whether we are viewing a page, editing a page, or previewing an edit draft 
+function scrollTextareaInit() {
+    // look for meta tag -- is edit_on_doubleclick present?
+    if (!document.getElementsByName('edit_on_doubleclick').length) {
+        return;
+    }
+    turnDebugOnOrOff ();
+    // are we viewing a page - both gui and text editors will have button named button_save
+    if (!document.getElementsByName('button_save').length) {
+        setSpanTags(0);
+        return;
+    }
+    // we are in editor -- is there a line number specified in URL?
+    var lineMatch = document.location.search.match(/line=(\d*)/);
+    if (lineMatch) {
+        scrollTextarea(lineMatch[1]);
+        return;
+    } 
+    if (document.getElementById('preview')) {
+        // is an editor preview
+        setSpanTags(1);
+    }
+}
+
+// The DOM ready check for Internet Explorer
+function ieScrollCheck() {
+	try {
+		// If IE is used, use the trick by Diego Perini
+		document.documentElement.doScroll("left");
+	} catch( error ) {
+		setTimeout( ieScrollCheck, 1 );
+		return;
+	}
+    scrollTextareaInit();
+}
+
+// run auto scroll init As Soon As Possible -- prior to onload for modern browsers
+function runASAP() {
+    if (document.addEventListener) { 
+        // Firefox 3.6, Chrome 4.0.249.89, Safari for Windows 4.04, Opera 10.5beta, and maybe older versions
+        // schedule func to be run when DOM complete, usually before last image loaded
+        document.addEventListener("DOMContentLoaded", scrollTextareaInit, false);
+    } else {
+        if (document.documentElement.doScroll && window == window.top) {
+            // IE 5-8 and not using frames
+            ieScrollCheck();
+        } else {
+            addLoadEvent(scrollTextareaInit);
+        }
+    }
+}
+// auto scroll initialization starts here
+runASAP();
+
+_text/javascript_6https://gcc.gnu.org/moin_static199/common/js/common.jsOhbplist00‘rsX$versionX$objectsY$archiverT$top Ü†Ø##)*0123QRSTUVWXYZ[\]^_`abcdefghimU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1ÄÄÄ	ÄÄ"ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_6https://gcc.gnu.org/moin_static199/common/js/common.js“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿uÊmﬂ+ »”456CPWNS.keysZNS.objects¨789:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄ¨EFGHIJKLMNOÄÄÄÄÄÄÄÄÄÄÄÄ Ä!\Content-TypeZKeep-Alive_Content-Security-PolicyVServerTDate_Strict-Transport-Security^Content-LengthZConnectionX__hhaa__TEtag]Accept-Ranges]Last-Modified_text/javascript_timeout=30, max=19_default-src 'self' http: https:VApache_Tue, 03 Jul 2018 15:09:30 GMT_max-age=16070400U27963ZKeep-Alive_∏
+
+YnBsaXN0MDDbAQIDBAUGBwgJCgsMDhASFBYYGhweIFZTZXJ2ZXJcQ29udGVudC1UeXBlXxAXQ29udGVudC1TZWN1cml0eS1Qb2xpY3ldTGFzdC1Nb2RpZmllZFpDb25uZWN0aW9uXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV1BY2NlcHQtUmFuZ2VzVERhdGVeQ29udGVudC1MZW5ndGhaS2VlcC1BbGl2ZVRFdGFnoQ1WQXBhY2hloQ9fEA90ZXh0L2phdmFzY3JpcHShEV8QH2RlZmF1bHQtc3JjICdzZWxmJyBodHRwOiBodHRwczqhE18QHU1vbiwgMzEgT2N0IDIwMTYgMjA6NDQ6MDIgR01UoRVaS2VlcC1BbGl2ZaEXXxAQbWF4LWFnZT0xNjA3MDQwMKEZVWJ5dGVzoRtfEB1UdWUsIDAzIEp1bCAyMDE4IDE1OjA5OjMwIEdNVKEdVTI3OTYzoR9fEBJ0aW1lb3V0PTMwLCBtYXg9MTmhIV8QGiI4MGEwZC02ZDNiLTU0MDJmNDQ5N2U4ODAiAAgAHwAmADMATQBbAGYAggCQAJUApACvALQAtgC9AL8A0QDTAPUA9wEXARkBJAEmATkBOwFBAUMBYwFlAWsBbQGCAYQAAAAAAAACAQAAAAAAAAAiAAAAAAAAAAAAAAAAAAABoQ==_"80a0d-6d3b-5402f4497e880"Ubytes_Mon, 31 Oct 2016 20:44:02 GMT“+,jk_NSMutableDictionary£jl/\NSDictionary“+,no_NSHTTPURLResponse£pq/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—tu_WebResourceResponseÄ    # - 2 7 ] c ~ † ¬ ≈ Á Í58;]ÇÑÜàäåéêíìïóôõ¢™∂∏∫ºı˙ )+-4<GTVXZ\^`bdfhjly{}ÅÉÖáâãçèëì†´≈Ã—Ì¸#1CXzÅ°¥∫≈Åû§ƒ…ﬂ„ı	!/ADZ             v              \‘O,≠/*  common.css - MoinMoin Default Styles
+
+Copyright (c) 2001, 2002, 2003 by Juergen Hermann
+*/
+
+/* content styles */
+
+html {
+    background-color: white;
+    color: black;
+    font-family: Arial, Lucida Grande, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    margin: 0;
+}
+
+/* Links */
+
+a {color: #0044B3;}
+a:visited {color: #597BB3;}
+a.nonexistent:visited, a.badinterwiki:visited,
+a.nonexistent, a.badinterwiki {color: gray;}
+
+a.www:before {content: url(../img/moin-www.png); margin: 0 0.2em;}
+a.http:before {content: url(../img/moin-www.png); margin: 0 0.2em;}
+a.https:before {content: url(../img/moin-www.png); margin: 0 0.2em;}
+a.file:before {content: url(../img/moin-ftp.png); margin: 0 0.2em;}
+a.ftp:before {content: url(../img/moin-ftp.png); margin: 0 0.2em;}
+a.nntp:before {content: url(../img/moin-news.png); margin: 0 0.2em;}
+a.news:before {content: url(../img/moin-news.png); margin: 0 0.2em;}
+a.telnet:before, a.ssh:before {content: url(../img/moin-telnet.png); margin: 0 0.2em;}
+a.irc:before, a.ircs:before  {content: url(../img/moin-telnet.png); margin: 0 0.2em;}
+a.mailto:before {content: url(../img/moin-email.png); margin: 0 0.2em;}
+a.attachment:before {content: url(../img/moin-attach.png); margin: 0 0.2em;}
+a.badinterwiki:before {content: url(../img/moin-inter.png); margin: 0 0.2em;}
+a.interwiki:before {content: url(../img/moin-inter.png); margin: 0 0.2em;}
+
+li p {
+    margin: .25em 0;
+}
+
+li.gap {
+    margin-top: 0.5em;
+}
+
+dt {
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+dd {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dd p {
+    margin: 0.25em 0;
+}
+
+a, img, img.drawing {
+    border: 0;
+}
+
+pre {
+    border: 1pt solid #AEBDCC;
+    background-color: #F3F5F7;
+    padding: 5pt;
+    font-family: courier, monospace;
+    white-space: pre;
+    /* begin css 3 or browser specific rules - do not remove!
+    see: http://forums.techguy.org/archive/index.php/t-249849.html */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    /* end css 3 or browser specific rules */
+}
+
+pre.comment {
+    background-color: #CCCCCC;
+    color: red;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+pre.comment:before {
+    content: url(../img/attention.png);
+}
+
+
+/* .comment css definition must be top of .red/.green/.blue or it won't work */
+.comment { color: #555555; background-color: #DDDDFF; }
+
+.red { background-color: #FFCCCC; }
+.green { background-color: #CCFFCC; }
+.blue { background-color: #CCCCFF; }
+.yellow { background-color: #FFF29F; }
+.orange { background-color: #FFD59B; }
+
+.solid { border: 2px solid #000000; padding: 2px; }
+.dashed { border: 2px dashed #000000; padding: 2px; }
+.dotted { border: 2px dotted #000000; padding: 2px; }
+
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.justify { text-align: justify; }
+
+table
+{
+    margin: 0.5em 0 0 0.5em;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    border: 1pt solid #ADB9CC;
+}
+
+td p {
+    margin: 0;
+    padding: 0;
+}
+
+/* TableOfContents macro */
+div.table-of-contents {
+    border: 1px solid #bbbbbb;
+    color: black;
+    background-color: #eeeeee;
+    font-size: 80%;
+    text-align: left;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.5em 0.75em 0.5em 0.5em;
+    max-width: 50%;
+    display: inline-table;
+}
+div.table-of-contents ol {
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+div.table-of-contents ul {
+    margin: 0;
+    list-style:none;
+}
+div.table-of-contents li {
+    margin:0;
+    padding: 0;
+}
+p.table-of-contents-heading {
+    font-weight:bold;
+    padding:0;
+    margin: 0 0 0.5em 0;
+    letter-spacing: 0.075em;
+}
+
+/* Navigation macro */
+table.navigation {
+    background: #fff;
+    margin: 0;
+}
+
+.footnotes div {
+    width: 5em;
+    border-top: 1pt solid gray;
+}
+
+.footnotes ol {
+    padding: 0 2em;
+    margin: 0 0 1em;
+}
+
+.footnotes li {
+}
+
+.info {
+    float: right;
+    font-size: 0.7em;
+    color: gray;
+}
+
+#pageinfo {
+    margin-top: 2em;
+}
+
+.seperator {
+    color: gray;
+}
+
+#pagebottom {clear: both;}
+
+/* standard rule ---- */
+hr {
+    height: 1pt;
+    background-color: #9C9C9C;
+    border: 0;
+}
+
+/* custom rules ----- to ---------- */
+.hr1 {height: 2pt;}
+.hr2 {height: 3pt;}
+.hr3 {height: 4pt;}
+.hr4 {height: 5pt;}
+.hr5 {height: 6pt;}
+.hr6 {height: 7pt;}
+
+/* Replacement for deprecated html 3 <u> element and html 4 <strike> */
+.u {text-decoration: underline;}
+.strike {text-decoration: line-through;}
+
+/* eye catchers */
+.warning
+{
+    color: red;
+}
+
+.error
+{
+    color: red;
+}
+
+strong.highlight
+{
+    background-color: #CCE0FF;
+    padding: 1pt;
+}
+
+
+/* Recent changes */
+
+.rcrss {
+    float: right;
+    margin: 0;
+}
+
+.recentchanges[dir="rtl"] .rcrss {
+    float: left;
+}
+
+.recentchanges table {
+    clear: both;
+}
+
+.recentchanges td {
+    vertical-align: top;
+    border: none;
+    border-bottom: 1pt solid #E6EAF0;
+    background: #F2F4F7;
+}
+
+.rcdaybreak td {
+    background: #B8C5D9;
+    border: none;
+}
+
+.rcdaybreak td a {
+    font-size: 0.88em;
+}
+
+.rcicon1, .rcicon2 {
+    text-align: center;
+}
+
+.rcpagelink {
+    width: 33%;
+}
+
+.rctime {
+    font-size: 0.88em;
+    white-space: nowrap;
+}
+
+.rceditor {
+    white-space: nowrap;
+    font-size: 0.88em;
+}
+
+.rccomment {
+    width: 50%;
+    color: gray;
+    font-size: 0.88em;
+}
+
+
+/* User Preferences */
+
+.userpref table, .userpref td {
+    border: none;
+}
+
+/* CSS for new code_area markup used by Colorizer and ParserBase */
+
+div.codemsg {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    padding-left:2.5em;
+    background:none;
+    border: 1pt solid #CCBDAE;
+    background-color: #F7F0E0;
+    background-image:url('../img/alert.png');
+    background-repeat:no-repeat;
+    background-position: 0.5em 0.5em;
+    color: black;
+}
+
+div.codearea { /* the div makes the border */
+    margin: 0.5em 0;
+    padding: 0;
+    border: 1pt solid #AEBDCC;
+    background-color: #F3F5F7;
+    color: black;
+}
+
+div.codearea pre { /* the pre has no border and is inside the div */
+    margin: 0;
+    padding: 10pt;
+    border: none;
+}
+
+a.codenumbers { /* format of the line numbering link */
+    margin: 0 10pt;
+    font-size: 0.85em;
+    color: gray;
+}
+
+/* format of certain syntax spans */
+div.codearea pre span.LineNumber {color: gray;}
+div.codearea pre span.ID         {color: #000000;}
+div.codearea pre span.Operator   {color: #0000C0;}
+div.codearea pre span.Char       {color: #004080;}
+div.codearea pre span.Comment    {color: #008000;}
+div.codearea pre span.Number     {color: #0080C0;}
+div.codearea pre span.String     {color: #004080;}
+div.codearea pre span.SPChar     {color: #0000C0;}
+div.codearea pre span.ResWord    {color: #A00000;}
+div.codearea pre span.ConsWord   {color: #008080; font-weight: bold;}
+div.codearea pre span.Error      {color: #FF8080; border: solid 1.5pt #FF0000;}
+div.codearea pre span.ResWord2   {color: #0080ff; font-weight: bold;}
+div.codearea pre span.Special    {color: #0000ff;}
+div.codearea pre span.Preprc     {color: #803999;}
+
+/* for diff parser */
+div.codearea pre span.DiffAdded   {color: #4876FF;}
+div.codearea pre span.DiffRemoved {color: #FF0000;}
+div.codearea pre span.DiffChanged {color: #FF7F50;}
+div.codearea pre span.DiffSeparator {color: #228B22; font-weight: bold}
+
+/* Search results */
+.advancedsearch {
+    border: 1pt solid #ADB9CC;
+}
+
+.advancedsearch td {
+    vertical-align: top;
+    background-color: #E7E7E7;
+    border: 0px;
+}
+
+.advancedsearch td.searchfor {
+    font-weight: bold;
+}
+
+.advancedsearch input {
+    border: 1px solid #ADB9CC;
+    background-color: #fff;
+}
+
+.advancedsearch input[disabled] {
+    background-color: #eee;
+}
+
+.advancedsearch td.submit {
+    border-top: 1px solid #ADB9CC;
+    background-color: #fff;
+    text-align: right;
+}
+
+.advancedsearch optioni, select {
+    border: 1px solid #ADB9CC;
+    background-color: #fff;
+}
+
+
+.searchresults dt {
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+.searchresults dd, .searchresults p {
+    font-size: 0.85em;
+}
+
+.searchresults .searchhitinfobar {
+    color: #008000;
+    margin-left: 15px;
+    margin-top: 0;
+}
+
+p.searchstats {
+    font-size: 0.8em;
+    text-align: right;
+    width: 100%;
+    background-color: #E6EAF0;
+    border-top: 1px solid #9088DC;
+    padding: 2px;
+}
+
+p.searchhint {
+    background-color: #E6EAF0;
+    border: 1px solid #9088DC;
+    padding: 2px;
+}
+
+.searchpages {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchpages tr, .searchpages td {
+    border: 0;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #b93a58;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.searchpages td a, .searchpages td a:link {
+    text-decoration: underline;
+}
+
+/* MonthCalendar css */
+
+/* days without and with pages linked to them */
+a.cal-emptyday {
+    color: #777777;
+    text-align: center;
+}
+a.cal-usedday {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+/* general stuff: workdays, weekend, today */
+td.cal-workday {
+    background-color: #DDDDFF;
+    text-align: center;
+}
+td.cal-weekend {
+    background-color: #FFDDDD;
+    text-align: center;
+}
+td.cal-today {
+    background-color: #CCFFCC;
+    border-style: solid;
+    border-width: 2pt;
+    text-align: center;
+}
+/* invalid places on the monthly calendar sheet */
+td.cal-invalidday {
+    background-color: #CCCCCC;
+}
+/* links to prev/next month/year */
+a.cal-link {
+    color: #000000;
+    text-decoration: none;
+}
+th.cal-header {
+    background-color: #DDBBFF;
+    text-align: center;
+}
+
+/* for MonthCalendar mouseover info boxes */
+TABLE.tip {
+    color: black;
+    background-color: #FF8888;
+    font-size: small;
+    font-weight: normal;
+    border-style: solid;
+    border-width: 1px;
+}
+
+TH.tip {
+    background-color: #FF4444;
+    font-weight: bold;
+    text-align: center;
+}
+
+TD.tip {
+    text-align: left;
+}
+*[dir="rtl"] TD.tip {
+    text-align: right;
+}
+
+/* end MonthCalendar stuff */
+
+#message .hint {font-style: italic;}
+#message .info {
+    float: none;
+    font-size: 1em;
+    color: black;
+}
+#message .info:before {
+    content: url('../img/icon-info.png');
+    margin: 0 0.5em 0 0.25em;
+    vertical-align: middle;
+}
+#message .warning:before {
+    content: url('../img/alert.png');
+    margin: 0 0.5em 0 0.125em;
+    vertical-align: middle;
+}
+#message .error:before {
+    content: url('../img/icon-error.png');
+    margin: 0 0.5em 0 0.125em;
+    vertical-align: middle;
+}
+#message a.clear-link {
+    display: block;
+    margin: 0.75em 0 0 0;
+    font-size: small;
+}
+
+
+/* admonition start */
+#content div.caution,
+#content div.important,
+#content div.note,
+#content div.tip,
+#content div.warning {
+    border: 1pt solid #E5E5E5;
+    background-color: #F9F9FF;
+    color: black;
+
+    margin: 10pt 30pt 10pt 30pt;
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    min-height: 64px; /*64=48+8+8 but doesn't work with IE*/
+    padding-left: 64px;
+}
+
+#content div.caution p,
+#content div.important p,
+#content div.note p,
+#content div.tip p,
+#content div.warning p {
+    margin-top: 8px; /*to align text with bg graphic*/
+}
+
+#content div.tip { background-image: url("../img/admon-tip.png"); }
+#content div.note { background-image: url("../img/admon-note.png"); }
+#content div.important { background-image: url("../img/admon-important.png"); }
+#content div.caution { background-image: url("../img/admon-caution.png"); }
+#content div.warning { background-image: url("../img/admon-warning.png"); }
+
+/* admonition end */
+
+Xtext/css_8https://gcc.gnu.org/moin_static199/modern/css/common.cssO˚bplist00‘z{X$versionX$objectsY$archiverT$top Ü†Ø'#)*0123UVWXYZ[\]^_`abcdefghijklmnopquU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1ÄÄÄ	ÄÄ&ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_8https://gcc.gnu.org/moin_static199/modern/css/common.css“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿uÊmÏh »”456ETWNS.keysZNS.objectsÆ789:;<=>?@ABCDÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄÄÆGHIJKLMNOPQRSÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#Ä$Ä%\Content-TypeZKeep-Alive]Last-Modified_Content-Security-Policy_Content-EncodingVServerTDate_Strict-Transport-Security^Content-LengthZConnectionX__hhaa__TEtagTVary]Accept-RangesXtext/css_timeout=30, max=20_Mon, 31 Oct 2016 20:44:02 GMT_default-src 'self' http: https:TgzipVApache_Tue, 03 Jul 2018 15:09:30 GMT_max-age=16070400T3179ZKeep-Alive_
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlWktlZXAtQWxpdmVUVmFyeV8QF0NvbnRlbnQtU2VjdXJpdHktUG9saWN5XxAQQ29udGVudC1FbmNvZGluZ1ZTZXJ2ZXJURGF0ZV8QGVN0cmljdC1UcmFuc3BvcnQtU2VjdXJpdHleQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPWHRleHQvY3NzoRFfEBJ0aW1lb3V0PTMwLCBtYXg9MjChE18QD0FjY2VwdC1FbmNvZGluZ6EVXxAfZGVmYXVsdC1zcmMgJ3NlbGYnIGh0dHA6IGh0dHBzOqEXVGd6aXChGVZBcGFjaGWhG18QHVR1ZSwgMDMgSnVsIDIwMTggMTU6MDk6MzAgR01UoR1fEBBtYXgtYWdlPTE2MDcwNDAwoR9UMzE3OaEhWktlZXAtQWxpdmWhI18QGiI4MGEzZS0yY2FkLTU0MDJmNDQ5N2U4ODAioSVVYnl0ZXOhJ18QHU1vbiwgMzEgT2N0IDIwMTYgMjA6NDQ6MDIgR01UAAgAIwAwADsAQABaAG0AdAB5AJUApACvALQAwgDQANIA2wDdAPIA9AEGAQgBKgEsATEBMwE6ATwBXAFeAXEBcwF4AXoBhQGHAaQBpgGsAa4AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAABzg==_"80a3e-2cad-5402f4497e880"_Accept-EncodingUbytes“+,rs_NSMutableDictionary£rt/\NSDictionary“+,vw_NSHTTPURLResponse£xy/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—|}_WebResourceResponseÄ    # - 2 7 a g Ç § ∆ … Î Ó9<?aÉÜàäåéêíîñóôõùü¶Æ∫ºæ¿˚ &/13:BM\^`bdfhjlnprtvxáâãçèëìïóôõùü°£•≤ΩÀÂ¯ˇ /:CHM[dyôª¿«Á˙ˇ
+/AGLbfsxåê§≤ƒ«›             ~              ﬂ‘O"/*  screen.css - MoinMoin Default Styles
+
+Copyright (c) 2001, 2002, 2003 by Juergen Hermann
+*/
+
+/* content styles */
+
+/* debug 
+* {border: 1px dotted blue;}
+*/
+
+body {
+    padding: 0;
+    border: 0;
+}
+
+a:link { text-decoration: none; }
+a:link:hover, a:link:active { text-decoration: underline; color: green; }
+a:visited { text-decoration: none; color: blue; }
+a:visited:hover { text-decoration: none; color: red; }
+
+a.download {
+    font-size: 120%; 
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    background: #E7E7E7;
+    border: 1px solid #9C9C9C;
+    padding: 0.5em;
+    text-align: center;
+}
+
+input {
+    /* does strange effect to button (text size becomes bigger when clicking)
+    font-size: 1em;
+    font-family: Arial, Lucida Grande, sans-serif;
+    */
+}
+
+textarea {
+    font-size: 1em;
+    font-family: monospace;
+}
+
+.disabled {
+    /* IE ignore disabled attribute, but at least show items in gray */
+    color: gray;
+}
+
+/* user interface styles */
+
+#header {
+    margin: 1px;
+    padding: 1px;
+    /* background: #3D4551; */
+    background: #E7E7E7;
+    line-height: 1.1em;
+}
+
+#logo {
+    float: left;
+    margin: 5px 10px;
+    padding: 0;
+    /* For text only logo */
+    font-size: 1.4em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+*[dir="rtl"] #logo {
+    float: right;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+#logo a {
+    color: black;
+    text-decoration: none;
+}
+
+#username {
+    display: inline;
+    margin: 5px 12px;
+    padding: 0;
+    text-align: right;
+    font-size: 0.82em;
+    white-space: nowrap;
+}
+
+*[dir="rtl"] #username {
+    text-align: left;
+    margin: 5px 0px;
+}
+
+#username li {
+    display: inline;
+    padding: 0 0.5em 0 0;
+}
+
+#username form {
+    display: inline;
+}
+
+#username input {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #E7E7E7; /* inherit doesnt work on IE */
+    color: blue;
+    font-size: 0.82em;
+    cursor: pointer;
+}
+
+#username input:hover {
+    color: red;
+}
+
+#searchform {
+    float: right;
+    margin: 5px 10px;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 0.82em;
+}
+
+*[dir="rtl"] #searchform {
+    float: left;
+}
+
+#searchform form div {
+    display: inline;
+}
+
+#pagetrail {
+    clear: right;
+    margin: 5px 12px;
+    padding: 0;
+    font-size: 0.88em;
+}
+
+*[dir="rtl"] #pagetrail {
+    clear: left;
+}
+
+#interwiki {
+    margin: 5px 12px;
+    display: inline;
+    font-size: 1em;
+}
+
+*[dir="rtl"] #interwiki {
+    margin: 5px 0px;
+    display: inline;
+    font-size: 1em;
+}
+
+#interwiki span:after {
+    content: ":";
+}
+
+#locationline {
+    clear: right;
+    padding: 0;
+}
+
+*[dir="rtl"] #locationline {
+    clear: left;
+}
+
+#pagelocation {
+    display: inline;
+    margin: 5px 12px;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+#pagetrail li, #pagelocation li {
+    display: inline;
+    margin: 0;
+}
+
+/* XXX Warning: non-ascii characters! */
+#pagetrail li:after {
+    content: " ¬ª ";
+}
+
+*[dir="rtl"] #pagetrail li:after {
+    content: " ¬´ ";
+}
+
+#pagetrail li:last-child:after {
+    content: "";
+}
+
+#pagelocation li:after {
+    content: "/ ";
+}
+
+*[dir="rtl"] #pagelocation li:after {
+    content: " \\ "; /* TODO: check what looks best with RTL */
+}
+
+#pagelocation li:last-child:after {
+    content: "";
+}
+
+#navibar {
+    clear: both;  /* problem: clear: right; aligns nicely right of logo,
+                    but lets it float high in the header, disconnected from ground */
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 0.82em;
+    zoom: 1; /* for avoiding a gap between navibar and pageline on IE */
+}
+
+#navibar li {
+    float: left;
+    display: inline;
+    margin: 0 2px;
+    padding: 2px 5px;
+    border: 1px solid #9C9C9C;
+    border-bottom: none;
+    white-space: nowrap;
+}
+
+*[dir="rtl"] #navibar li {
+    float: right;
+}
+
+#navibar li.wikilink {
+    background: white; /*url(../img/tab-wiki.png) repeat-x;*/
+}
+
+#navibar li.userlink {
+    background: #E6EAF0; /*url(../img/tab-user.png) repeat-x;*/
+}
+
+#navibar a, #navibar a:visited {
+    color: black;
+    text-decoration: none;    
+}
+
+#navibar li.current a {
+    font-weight: bold;
+}
+
+#navibar li:hover {
+    background: #CCCCCC;
+}
+
+#navibar li.current, #navibar li.current:hover {
+    background: #81BBF2; /* url(../img/tab-selected.png) repeat-x; */
+}
+
+#pageline {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* sync these values, line-height is needed for IE */
+    height: 4px;
+    line-height: 4px;
+    border-bottom: 1px solid #9C9C9C;
+    background: #81BBF2;
+}
+
+.editbar {
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 0 8px;
+    white-space: nowrap;
+    background: white;
+    font-size: 0.8em;
+}
+
+.editbar form, .editbar form div {
+    display: inline;
+    margin: 0;
+}
+
+.editbar li {
+    display: inline;
+    padding: 0;
+    margin: 4px 6px;
+}
+
+*[dir="rtl"] .editbar li {
+    float: right;
+}
+
+#header .editbar {
+    border-bottom: 1px dotted #9C9C9C;
+}
+
+#footer .editbar {
+    border-top: 1px dotted #9C9C9C;
+    border-bottom: 1px solid #9C9C9C;
+}
+
+.editbar a, .editbar a:visited { color: #0044B3; }
+
+#message {
+    clear: both;
+    margin: 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #c9c9c9;
+    background: #E6EAF0;
+}
+
+#message p {
+    margin: 5px 0;
+    padding: 0;
+    /* font-weight: bold; */
+}
+
+#message div.buttons {
+    font-weight: normal;
+}
+
+.dialog form {
+    margin: 0 15px;
+}
+
+.dialog td {
+    border: none;
+    padding: 5px;
+}
+
+.dialog td.label {
+    text-align: right;
+    font-weight: bold;
+    width: 25%;
+}
+
+*[dir="rtl"] .dialog td.label {
+    text-align: left;
+}
+
+.dialog td.content input {
+    width: 100%;
+}
+
+#page {
+    background-color: white;
+    margin: 0;
+    padding: 2px 20px 20px 20px;
+
+    /* theses are some Firefox 1.5b1 specific extensions, see also the CSS3 draft.
+    -moz-column-width: 25em;
+    -moz-column-gap: 2em;
+    -moz-column-rule: solid black 0.3em;     --   doesn't work yet with 1.5b1!
+
+    TODO: make text/gui editor NOT use #page css, we don't want columns there!
+    */
+}
+
+/* We use here dumb css1 ids because of IE suckiness */
+#editor-textarea, #editor-help {
+    font-family: monospace;
+    border: 1px solid #8cacbb;  
+    color: black;
+    background-color: white;
+    padding: 3px;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+#editor-help {
+    font-size: small;
+    background-color: #EEEEFF;
+}
+
+#editor-comment {
+    font-size: 100%;
+    border: 1px solid #8cacbb;
+    color: black;
+    background-color: white;
+    vertical-align: middle;
+    padding: 1px;
+    display: inline;
+    width: 70%;
+}
+
+#preview, #previewbelow {
+    border: 1px solid #6C7680;
+    padding: 3px;
+    width: 100%;
+    background: url(../img/draft.png);
+    margin-top: 0.5em;
+}
+
+#textcha {
+    font-size: 100%;
+    margin-top: 0.5em;
+    border: 2px solid #FF8888;
+    color: black;
+    vertical-align: middle;
+    padding: 3px 2px;
+}
+
+#textcha-answer {
+    border: 2px solid #000000;
+    padding: 3px 2px;
+}
+
+input.button {
+    /*
+    border: 1px solid #8cacbb;  
+    color: black;
+    background-color: #CCCCCC;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+    margin: 2px;
+    padding: 1px;
+    display: inline;
+    */
+}
+
+#footer {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+#credits, #version, #timings{
+    margin: 5px 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 0.88em;
+    color: #6C7680;
+}
+
+#credits li, #timings li {
+    display: inline;
+    padding: 0 2px;
+    margin: 0 4px;
+}
+
+#credits img {
+    vertical-align: middle;
+}
+
+.diff {
+    width:99%;
+    table-layout: fixed;
+}
+
+.diff-header {
+    font-weight: bold;
+}
+
+.diff-title {
+    background-color: #C0C0C0;
+}
+
+.diff-added {
+    background-color: #E0FFE0;
+    vertical-align: top;
+    width: 50%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: courier, monospace;
+}
+
+.diff-removed {
+    background-color: #FFFFE0;
+    vertical-align: top;
+    width: 50%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: courier, monospace;
+}
+
+.diff-added span {
+    background-color: #80FF80;
+}
+
+.diff-removed span {
+    background-color: #FFFF80;
+}
+
+td.diff-info {
+    vertical-align: top;
+}
+
+div.diff-info {
+    white-space: nowrap;
+}
+
+div.diff-info-rev-comment span.diff-info-value {
+    white-space: normal;
+}
+
+div.diff-info-header {
+    background-color: #E8E8E8;
+    width: 100%;
+    padding: 0.25em 0.5em;
+    margin: -0.25em -0.5em;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+td.diff-same {
+    text-align: center;
+    border: 0;
+}
+
+table.navigation {
+    float: right;
+    margin: 2px;
+}
+
+#openididentifier {
+    background: url(../../common/openid.png) no-repeat;
+    background-position: 0 50%;
+    padding-left: 18px;
+}
+_8https://gcc.gnu.org/moin_static199/modern/css/screen.cssO˚bplist00‘z{X$versionX$objectsY$archiverT$top Ü†Ø'#)*0123UVWXYZ[\]^_`abcdefghijklmnopquU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1ÄÄÄ	ÄÄ&ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_8https://gcc.gnu.org/moin_static199/modern/css/screen.css“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿uÊmˆà »”456ETWNS.keysZNS.objectsÆ789:;<=>?@ABCDÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄÄÆGHIJKLMNOPQRSÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#Ä$Ä%\Content-TypeZKeep-Alive]Last-Modified_Content-Security-Policy_Content-EncodingVServerTDate_Strict-Transport-Security^Content-LengthZConnectionX__hhaa__TEtagTVary]Accept-RangesXtext/css_timeout=30, max=20_Mon, 31 Oct 2016 20:44:02 GMT_default-src 'self' http: https:TgzipVApache_Tue, 03 Jul 2018 15:09:30 GMT_max-age=16070400T2420ZKeep-Alive_
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlWktlZXAtQWxpdmVUVmFyeV8QF0NvbnRlbnQtU2VjdXJpdHktUG9saWN5XxAQQ29udGVudC1FbmNvZGluZ1ZTZXJ2ZXJURGF0ZV8QGVN0cmljdC1UcmFuc3BvcnQtU2VjdXJpdHleQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPWHRleHQvY3NzoRFfEBJ0aW1lb3V0PTMwLCBtYXg9MjChE18QD0FjY2VwdC1FbmNvZGluZ6EVXxAfZGVmYXVsdC1zcmMgJ3NlbGYnIGh0dHA6IGh0dHBzOqEXVGd6aXChGVZBcGFjaGWhG18QHVR1ZSwgMDMgSnVsIDIwMTggMTU6MDk6MzAgR01UoR1fEBBtYXgtYWdlPTE2MDcwNDAwoR9UMjQyMKEhWktlZXAtQWxpdmWhI18QGiI4MDc1OS0yMjEwLTU0MDJmNDQ5N2U4ODAioSVVYnl0ZXOhJ18QHU1vbiwgMzEgT2N0IDIwMTYgMjA6NDQ6MDIgR01UAAgAIwAwADsAQABaAG0AdAB5AJUApACvALQAwgDQANIA2wDdAPIA9AEGAQgBKgEsATEBMwE6ATwBXAFeAXEBcwF4AXoBhQGHAaQBpgGsAa4AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAABzg==_"80759-2210-5402f4497e880"_Accept-EncodingUbytes“+,rs_NSMutableDictionary£rt/\NSDictionary“+,vw_NSHTTPURLResponse£xy/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—|}_WebResourceResponseÄ    # - 2 7 a g Ç § ∆ … Î Ó9<?aÉÜàäåéêíîñóôõùü¶Æ∫ºæ¿˚ &/13:BM\^`bdfhjlnprtvxáâãçèëìïóôõùü°£•≤ΩÀÂ¯ˇ /:CHM[dyôª¿«Á˙ˇ
+/AGLbfsxåê§≤ƒ«›             ~              ﬂ‘ !O+/*  print.css - MoinMoin Default Styles
+
+Copyright (c) 2001, 2002, 2003 by Juergen Hermann
+*/
+
+/* content styles */
+
+html {
+    font-family: Times, serif;
+    font-size: 12pt;
+}
+
+body {
+    /* Give about 3.4cm in Mozilla/Firefox and about 2.2cm in Safari */
+    margin: 1.5cm;
+}
+
+a, a:visited, a.nonexistent, a.badinterwiki {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.info a {
+    color: gray;
+}
+
+pre {
+    font-size: 10pt;
+}
+
+a.interwiki:before, a.badinterwiki:before {
+    content: attr(title) ":";
+}
+
+a.interwiki img, a.badinterwiki img {
+    display: none;
+}
+
+.footnotes div {
+    width: 5em;
+    border-top: 1pt solid gray;
+}
+
+/* user interface styles */
+
+#header, #sidebar, #footer, #timings, #credits, #interwiki, #pagelocation {
+    display: none;
+}
+
+_7https://gcc.gnu.org/moin_static199/modern/css/print.cssOÙbplist00‘z{X$versionX$objectsY$archiverT$top Ü†Ø'#)*0123UVWXYZ[\]^_`abcdefghijklmnopquU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1ÄÄÄ	ÄÄ&ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_7https://gcc.gnu.org/moin_static199/modern/css/print.css“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿uÊnG »”456ETWNS.keysZNS.objectsÆ789:;<=>?@ABCDÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄÄÆGHIJKLMNOPQRSÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#Ä$Ä%\Content-TypeZKeep-Alive]Last-Modified_Content-Security-Policy_Content-EncodingVServerTDate_Strict-Transport-Security^Content-LengthZConnectionX__hhaa__TEtagTVary]Accept-RangesXtext/css_timeout=30, max=18_Mon, 31 Oct 2016 20:44:02 GMT_default-src 'self' http: https:TgzipVApache_Tue, 03 Jul 2018 15:09:30 GMT_max-age=16070400S452ZKeep-Alive_ 
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlWktlZXAtQWxpdmVUVmFyeV8QF0NvbnRlbnQtU2VjdXJpdHktUG9saWN5XxAQQ29udGVudC1FbmNvZGluZ1ZTZXJ2ZXJURGF0ZV8QGVN0cmljdC1UcmFuc3BvcnQtU2VjdXJpdHleQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPWHRleHQvY3NzoRFfEBJ0aW1lb3V0PTMwLCBtYXg9MTihE18QD0FjY2VwdC1FbmNvZGluZ6EVXxAfZGVmYXVsdC1zcmMgJ3NlbGYnIGh0dHA6IGh0dHBzOqEXVGd6aXChGVZBcGFjaGWhG18QHVR1ZSwgMDMgSnVsIDIwMTggMTU6MDk6MzAgR01UoR1fEBBtYXgtYWdlPTE2MDcwNDAwoR9TNDUyoSFaS2VlcC1BbGl2ZaEjXxAZIjgwN2EwLTMyYi01NDAyZjQ0OTdlODgwIqElVWJ5dGVzoSdfEB1Nb24sIDMxIE9jdCAyMDE2IDIwOjQ0OjAyIEdNVAAIACMAMAA7AEAAWgBtAHQAeQCVAKQArwC0AMIA0ADSANsA3QDyAPQBBgEIASoBLAExATMBOgE8AVwBXgFxAXMBdwF5AYQBhgGiAaQBqgGsAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAcw=_"807a0-32b-5402f4497e880"_Accept-EncodingUbytes“+,rs_NSMutableDictionary£rt/\NSDictionary“+,vw_NSHTTPURLResponse£xy/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—|}_WebResourceResponseÄ    # - 2 7 a g Ç § ∆ … Î Ó9<?aÉÜàäåéêíîñóôõùü¶Æ∫ºæ¿˙ˇ
+%.029AL[]_acegikmoqsuwÜàäåéêíîñòöúû†¢§±º ‰˜˛.9BGLZcxò∫ø∆Ê˘˝(:@E[_lqÖâù´Ω¿÷             ~              ÿ‘#$%ON/*  projection.css - MoinMoin Slide Styles
+
+Copyright (c) 2003 by Juergen Hermann
+*/
+
+@import url(screen.css);
+
+html { line-height: 1.8em; }
+
+body, b, em, a, span, div, p, td { font-size: 18pt; }
+
+h1 { font-size: 26pt; }
+h2 { font-size: 22pt; }
+h3 { font-size: 20pt; }
+h4 { font-size: 18pt; }
+h5 { font-size: 16pt; }
+h6 { font-size: 14pt; }
+
+tt, pre { font-size: 16pt; }
+sup, sub { font-size: 12pt; }
+
+table.navigation {
+    float: right;
+    margin: 2px;
+}
+
+.navigation td, .navigation a {
+    font-size: 10pt;
+    padding: 2px;
+}
+
+#interwiki, #pagelocation, #pageinfo { display: none; }
+
+_<https://gcc.gnu.org/moin_static199/modern/css/projection.cssO˘bplist00‘z{X$versionX$objectsY$archiverT$top Ü†Ø'#)*0123UVWXYZ[\]^_`abcdefghijklmnopquU$null›	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1ÄÄÄ	ÄÄ&ÄÄ Ä”$% '(WNS.base[NS.relativeÄ ÄÄ_<https://gcc.gnu.org/moin_static199/modern/css/projection.css“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿uÊn
+– »”456ETWNS.keysZNS.objectsÆ789:;<=>?@ABCDÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄÄÆGHIJKLMNOPQRSÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#Ä$Ä%\Content-TypeZKeep-Alive]Last-Modified_Content-Security-Policy_Content-EncodingVServerTDate_Strict-Transport-Security^Content-LengthZConnectionX__hhaa__TEtagTVary]Accept-RangesXtext/css_timeout=30, max=20_Mon, 31 Oct 2016 20:44:02 GMT_default-src 'self' http: https:TgzipVApache_Tue, 03 Jul 2018 15:09:30 GMT_max-age=16070400S326ZKeep-Alive_ 
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlWktlZXAtQWxpdmVUVmFyeV8QF0NvbnRlbnQtU2VjdXJpdHktUG9saWN5XxAQQ29udGVudC1FbmNvZGluZ1ZTZXJ2ZXJURGF0ZV8QGVN0cmljdC1UcmFuc3BvcnQtU2VjdXJpdHleQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvblRFdGFnXUFjY2VwdC1SYW5nZXNdTGFzdC1Nb2RpZmllZKEPWHRleHQvY3NzoRFfEBJ0aW1lb3V0PTMwLCBtYXg9MjChE18QD0FjY2VwdC1FbmNvZGluZ6EVXxAfZGVmYXVsdC1zcmMgJ3NlbGYnIGh0dHA6IGh0dHBzOqEXVGd6aXChGVZBcGFjaGWhG18QHVR1ZSwgMDMgSnVsIDIwMTggMTU6MDk6MzAgR01UoR1fEBBtYXgtYWdlPTE2MDcwNDAwoR9TMzI2oSFaS2VlcC1BbGl2ZaEjXxAZIjgwNzU3LTI0ZS01NDAyZjQ0OTdlODgwIqElVWJ5dGVzoSdfEB1Nb24sIDMxIE9jdCAyMDE2IDIwOjQ0OjAyIEdNVAAIACMAMAA7AEAAWgBtAHQAeQCVAKQArwC0AMIA0ADSANsA3QDyAPQBBgEIASoBLAExATMBOgE8AVwBXgFxAXMBdwF5AYQBhgGiAaQBqgGsAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAcw=_"80757-24e-5402f4497e880"_Accept-EncodingUbytes“+,rs_NSMutableDictionary£rt/\NSDictionary“+,vw_NSHTTPURLResponse£xy/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—|}_WebResourceResponseÄ    # - 2 7 a g Ç § ∆ … Î Ó9<?aÉÜàäåéêíîñóôõùü¶Æ∫ºæ¿ˇ!*357>FQ`bdfhjlnprtvxz|ãçèëìïóôõùü°£•ß©∂¡œÈ¸$3>GLQ_h}ùøƒÀÎ˛-?EJ`dqväé¢∞¬≈€             ~              ›            1   <   N   d   Ç   ë   ®  ]C  ]M  ]S  ]Ö  ]Ü  ]å  ]ï  ]´   Í   ¸  À5  ”°  ”™  [  d  ü 	û 	ß +ª +ˆ 4ı 4˛ 8- 8g A_ Ah C∫ C˘             &             Lˆ
