@@ -1,17 +1,17 @@
 MODULE helper
-    IMPLICIT NONE
 
     CONTAINS
-        REAL FUNCTION f(x)
+        FUNCTION func(x)
             !   arbitrary function.  I used the one the book told me to
 
             !   Declarations
             REAL, INTENT(IN)  :: x  ! input value
+            REAL :: func               ! the value of the function
 
             !   computations
-            f = x**3 - 5*x**2 + 5*x + 2
+            func = x**3 - 5*x**2 + 5*x + 2
 
-        END FUNCTION f
+        END FUNCTION func
 
         SUBROUTINE extremum_finder(func, first_value, last_value, num_steps, xmin, xmin_value, xmax, xmax_value)
             !   This sub finds the extremum positions and values for an arbitrary function defined in the fortran function f
@@ -21,7 +21,13 @@ MODULE helper
             REAL, INTENT(IN) :: first_value     ! first value of x
             REAL, INTENT(IN) :: last_value      ! last value of x
             INTEGER, INTENT(IN) :: num_steps    ! number of steps between those values
-            REAL :: func
+
+            ! local variables
+            INTEGER :: i ! loop index
+            REAL :: step_size   ! size of each step
+            REAL :: x           ! value to put into function
+            REAL :: value       ! value of the function at a specific x
+            REAL :: func        ! declare function
 
             ! outputs
             REAL, INTENT(OUT) :: xmin            ! position of minimum
@@ -29,16 +35,34 @@ MODULE helper
             REAL, INTENT(OUT) :: xmax            ! position of maximum
             REAL, INTENT(OUT) :: xmax_value      ! value of maximum
 
+            ! set up for loop
+            x = first_value
+            value = func(x)
+            xmin = x
+            xmax = x
+            xmin_value = value
+            xmax_value = value
 
-            WRITE (*,*) f(last_value)
+            ! Find the mins and maxes
+            step_size = (last_value - first_value) / REAL(num_steps) ! size of each step
 
+            DO i = 1, num_steps
+                ! update x
+                x = x + step_size
 
+                ! calculate the value of the function
+                value = func(x)
 
+                ! perform comparisons
+                IF (value > xmax_value) THEN
+                    xmax_value = value
+                    xmax = x
+                ELSE IF (value < xmin_value) THEN
+                    xmin_value = value
+                    xmin = x
+                END IF
+            END DO
         END SUBROUTINE extremum_finder
-
-
-
-
 
 
 
@@ -46,21 +70,19 @@ END MODULE helper
 
 ! ====================================================================================
 PROGRAM min_max
+    USE helper
+    IMPLICIT NONE !requires me to declare all variables
+
     !   Purpose:
     !       To find the minimum and maximum values in a function over a certain range
     !       Source: Exercise 7-21 and 7-22
 
-    !   Modules and IMPLICIT NONE statement
-    USE helper
-    IMPLICIT NONE !requires me to declare all variables
-
     !   Variable Declarations
     INTEGER :: start_time   ! execution start time
     INTEGER :: end_time     ! execution end time
-    REAL :: func            ! the function is real
-    REAL :: first_value=0     ! first value of x
-    REAL :: last_value =0     ! last value of x
-    INTEGER :: num_steps =0   ! number of steps between those values
+    REAL :: first_value=-1     ! first value of x
+    REAL :: last_value=3     ! last value of x
+    INTEGER :: num_steps=200   ! number of steps between those values
     REAL :: xmin            ! position of minimum
     REAL :: xmin_value      ! value of minimum
     REAL :: xmax            ! position of maximum
@@ -70,8 +92,14 @@ PROGRAM min_max
     CALL SYSTEM_CLOCK(start_time)
 
 
+    !   call subroutine
+    CALL extremum_finder(func, first_value, last_value, num_steps, xmin, xmin_value, xmax, xmax_value)
 
 
+    ! return values
+    WRITE (*,100) xmin_value, xmin, xmax_value, xmax
+    100 FORMAT ('The minimum value of the function is ', F7.2, ' at x = ', F7.2, /, &
+                'The maximum value of the function is ', F7.2, ' at x = ', F7.2)
 
     !   Finish up.
     CALL SYSTEM_CLOCK(end_time)
