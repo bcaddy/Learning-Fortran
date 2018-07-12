@@ -1,12 +1,12 @@
 MODULE helper
-
+!test code
     CONTAINS
         FUNCTION probability_finder(n)
             !   Purpose:
             !       To find the probability of n people in a room having the same birthday
 
             ! declarations
-            REAL :: probability_finder
+            REAL :: probabiity_finder
             INTEGER, INTENT(IN) :: n            ! number of people
             INTEGER, DIMENSION(n) :: bdays ! the array of birthdays
             INTEGER :: bday ! one single birthday in the array
@@ -35,8 +35,6 @@ MODULE helper
             END DO sim_loop
 
             probability_finder = REAL(n_dupe) / REAL(nsims)
-
-
 
         END FUNCTION probability_finder
 END MODULE helper
