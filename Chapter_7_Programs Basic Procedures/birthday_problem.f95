@@ -1,5 +1,5 @@
 MODULE helper
-!test code
+
     CONTAINS
         FUNCTION probability_finder(n)
             !   Purpose:
@@ -34,7 +34,8 @@ MODULE helper
                 END DO dup_loop
             END DO sim_loop
 
-            probability_finder = REAL(n_dupe) / REAL(nsims)
+            probability_finder = (REAL(n_dupe) / REAL(nsims))
+
 
         END FUNCTION probability_finder
 END MODULE helper
