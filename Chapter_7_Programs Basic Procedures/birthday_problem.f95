@@ -6,15 +6,15 @@ MODULE helper
             !       To find the probability of n people in a room having the same birthday
 
             ! declarations
-            REAL :: probabiity_finder
-            INTEGER, INTENT(IN) :: n            ! number of people
-            INTEGER, DIMENSION(n) :: bdays ! the array of birthdays
-            INTEGER :: bday ! one single birthday in the array
-            REAL, DIMENSION(n) :: rndm ! birthdays normalized between 0 and 1
-            INTEGER, PARAMETER :: nsims = 5000 ! number of simulations to run
-            INTEGER :: n_dupe ! number with duplicates
-            INTEGER :: i,j        ! loop indices
-
+            REAL                  :: probability_finder ! function declaration
+            INTEGER, INTENT(IN)   :: n                 ! number of people
+            INTEGER, DIMENSION(n) :: bdays             ! the array of birthdays
+            INTEGER               :: bday              ! one single birthday in the array
+            REAL, DIMENSION(n)    :: rndm              ! birthdays normalized between 0 and 1
+            INTEGER, PARAMETER    :: nsims = 5000      ! number of simulations to run
+            INTEGER               :: n_dupe            ! number with duplicates
+            INTEGER               :: i,j               ! loop indices
+             
             ! reset variables
             n_dupe=0
 
