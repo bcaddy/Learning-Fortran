@@ -1,6 +1,10 @@
 Atom Useful shortcuts
 - Ctrl-shift-up/down — adds multiple cursors
 - Cmd-shift-click — adds multiple cursors
-- Ctrl-cmd-a — automatically aligns code
-- Ctrl-alt-a — Ask Stack
-- Cmd-fn-f2 — toggle bookmark
+- Cmd-control-G - sets cursor at all matching characters
+- Cmd-shift-D - duplicate line
+- Cmd-control-up/down - move line up or down
+
+
+Fold and unfold code
+Switch between case
