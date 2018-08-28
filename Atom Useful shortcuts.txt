@@ -4,7 +4,3 @@ Atom Useful shortcuts
 - Cmd-control-G - sets cursor at all matching characters
 - Cmd-shift-D - duplicate line
 - Cmd-control-up/down - move line up or down
-
-
-Fold and unfold code
-Switch between case
