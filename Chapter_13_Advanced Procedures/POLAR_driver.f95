@@ -1,5 +1,5 @@
 MODULE helper
-    ! Contains the type definition for the POLAR type along with the extension for it to includ the
+    ! Contains the type definition for the POLAR type along with the extension for it to include the
     ! operators =, *, and /
     IMPLICIT NONE
 
