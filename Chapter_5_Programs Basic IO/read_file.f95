@@ -6,10 +6,10 @@ IMPLICIT NONE !requires me to declare all variables
 !       Source: Example 5-3
 
 !   Variable Declarations
-CHARACTER(100) :: filename   ! Name of file to open
-INTEGER :: nvals = 0        ! Number of values read in
-INTEGER :: status           ! I/O status
-REAL :: value               ! The real value read in
+CHARACTER(100) :: filename  ! Name of file to open
+INTEGER        :: nvals = 0 ! Number of vaqlues read in
+INTEGER        :: status    ! I/O status
+REAL           :: value     ! the real value read in
 
 !   Get the file name and echo it back to the user
 WRITE (*,*) 'Please enter the input file name'
