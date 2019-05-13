@@ -45,6 +45,4 @@ One may also skip the separate compilation step, and enter a command such as:
 
 
 gfortran -o executable source1.f90 source2.f90
-which will compile the source files source1.f90 and source2.f90, link and generate the executable executable 
-in one step. You can also put object files on this command line, they will be automatically linked in during 
-the link step.
+which will compile the source files source1.f90 and source2.f90, link and generate the executable in one step. You can also put object files on this command line, they will be automatically linked in during the link step.
