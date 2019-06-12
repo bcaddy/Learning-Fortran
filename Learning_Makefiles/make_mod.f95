@@ -1,4 +1,4 @@
-MODULE declaration_module
+MODULE make_mod
   !USE types, ONLY: dp, pi
   IMPLICIT NONE
 
@@ -6,4 +6,4 @@ MODULE declaration_module
   real :: testv=7.
 
 
-END MODULE declaration_module
+END MODULE make_mod

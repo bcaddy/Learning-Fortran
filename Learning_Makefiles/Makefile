@@ -1,16 +1,22 @@
 #.DEFAULT_GOAL := generate #choose the default goal instead of it being the first one
-.PHONY: all say_hello generate clean #tells make that these goals are not files but some other thing
+.PHONY: all clean #tells make that these goals are not files but some other thing
 
+CC = gfortran# compiler to use
 
-all: say_hello generate
+SRCS := $(wildcard *.f95)
+BINS := $(SRCS:%.f95=%)
 
-say_hello:
-	@echo "Hello World"
+all: ${BINS}
 
-generate:
-	@echo "Creating empty text files..."
-	touch file-{1..10}.txt
+hi: %.o ${BINS}
+	@echo "Checking.."
+	${CC} -o %<
+
+%.o: %.f95
+	@echo "Creating object.."
+	${CC} -c $<
 
 clean:
 	@echo "Cleaning up..."
-	rm *.txt
+	rm -f *.mod
+	rm -f *.o
