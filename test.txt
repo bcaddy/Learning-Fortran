@@ -1,4 +1,0 @@
-this is a test of the push/pull capabilities of the osiris-github-Capt. Janeway system
-
-
-now lets try going from janeway to osiris
