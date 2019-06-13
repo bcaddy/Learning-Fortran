@@ -57,6 +57,23 @@ lib: A communication-library-based coarray version, described at https://gcc.gnu
 
 
 install open coarrays with
-$ brew install gcc opencoarrays
+$ brew install opencoarrays
 
-then make sure to add opencoarrays to your path
+then you can compile a program one of two ways
+
+  Using caf:
+  you can use the "caf" script to compile.  Basically this just passes all the suitable parallelization flags to gfortran and lets
+  you pass any other flags you need to.  Basic implemetation below
+
+  $ caf [flags] [program_name].f95 -o [executable_name]
+
+  then run it with
+
+  $ cafrun -np [X] ./[executable]
+
+  where X is the number of images at program start up.
+
+
+  Using gfortran directly:
+  If you prefer to invoke the compiler directly, first run caf and cafrun with the --show flag to see the proper linking and
+  file includes.
