@@ -19,4 +19,5 @@ hi: %.o ${BINS}
 clean:
 	@echo "Cleaning up..."
 	rm -f *.mod
-	rm -f *.o
+	rm -f *o
+	rm -f *.exe
