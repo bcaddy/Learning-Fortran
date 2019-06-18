@@ -1,22 +1,37 @@
 Standard debugging compile settings:
 
-gfortran -std=f95 -Wextra -Wall -pedantic -fcheck=all -Og -fbacktrace filename.f95 -o outputfilename
+gfortran -std=f2018 -Wextra -Wall -pedantic -fimplicit-none -fcheck=all -Og -g -fbacktrace filename.f90 -o outputfilename
 
 
 High performance compile options
 
-gfortran -O3 filename.f95 -o outputfilename
+gfortran -std=f2018 -fimplicit-none -O3 filename.f90 -o outputfilename
 
 
+##### Debug Options #####
 -fbounds-check  !checks array bounds, is included in -fcheck=all
+-Wextra			!enable some extra warning flags that are not enabled by -Wall.
+-Wall			!enable all the warnings about constructions that some users consider questionable, and that are easy to avoid 
+				!(or modify to prevent the warning), even in conjunction with macros.
+-pedantic		!to generate warnings about language features that are supported by gfortran but are not part of the official 
+				!Fortran 95 standard. It possible to be even more "pedantic" and use -std=f95 flag for warnings to become errors.
+-fimplicit-none !specify that no implicit typing is allowed, unless overridden by explicit IMPLICIT statements. This is the 
+				!equivalent of adding implicit none to the start of every procedure.
+-fcheck=all 	!enable runtime tests suck as array bounds and checks
+-fbacktrace		!enable backtracing
+-Og				!optimization that doesn't interfere with debugging
+-g 				!produces debugging info for GDB
+
+##### Other #####
 -static			!compiles all libraries into the executable
+
+#####  Optimization Options #####
 -O 				!basic optimization, still compiles fairly quickly
 -O2				!more optimization, takes longer to compile
 -O3				!maximize performance, long compile times
 -O0				!fast compiling, very little optimization. This is the DEFAULT
 -Os				!optimize for size
--Ofast 			!disregard strict standards compliance, results in very fast code that isn't necessarily standard
--Og				!optimize for debugging
+-Ofast 			!O3 with fast non accurate math calculations
 
 
 Basic Usage
