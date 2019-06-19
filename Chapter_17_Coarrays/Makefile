@@ -5,7 +5,7 @@
 coarray_compiler = caf -std=f2018 -Wextra -Wall -pedantic -fimplicit-none -fcheck=all -Og -g -fbacktrace
 
 # list of binaries to clean as well
-binaries = tally test_sort
+binaries = tally test_sort pi_calculator
 
 
 all:
@@ -19,6 +19,8 @@ tally: tally.f90
 sort: sort_module.o merge_module.o test_sort.o
 	${coarray_compiler} sort_module.o merge_module.o test_sort.o -o test_sort
 
+pi_calculator: pi_calculator.f90
+	${coarray_compiler} $< -o $@
 
 # Create any object files needed
 %.o: %.f90
