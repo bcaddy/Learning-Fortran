@@ -11,11 +11,11 @@ gfortran -std=f2018 -fimplicit-none -O3 filename.f90 -o outputfilename
 ##### Debug Options #####
 -fbounds-check  !checks array bounds, is included in -fcheck=all
 -Wextra			!enable some extra warning flags that are not enabled by -Wall.
--Wall			!enable all the warnings about constructions that some users consider questionable, and that are easy to avoid 
+-Wall			!enable all the warnings about constructions that some users consider questionable, and that are easy to avoid
 				!(or modify to prevent the warning), even in conjunction with macros.
--pedantic		!to generate warnings about language features that are supported by gfortran but are not part of the official 
+-pedantic		!to generate warnings about language features that are supported by gfortran but are not part of the official
 				!Fortran 95 standard. It possible to be even more "pedantic" and use -std=f95 flag for warnings to become errors.
--fimplicit-none !specify that no implicit typing is allowed, unless overridden by explicit IMPLICIT statements. This is the 
+-fimplicit-none !specify that no implicit typing is allowed, unless overridden by explicit IMPLICIT statements. This is the
 				!equivalent of adding implicit none to the start of every procedure.
 -fcheck=all 	!enable runtime tests suck as array bounds and checks
 -fbacktrace		!enable backtracing
@@ -86,7 +86,8 @@ then you can compile a program one of two ways
 
   $ cafrun -np [X] ./[executable]
 
-  where X is the number of images at program start up.  By default X cannot be larger than the number of physical cores, adding the --oversubscribe flag however lets you add more, just be reasonable about the number of images.
+  where X is the number of images at program start up.  By default X cannot be larger than the number of physical cores, adding the
+	--oversubscribe flag however lets you add more, just be reasonable about the number of images.
 
 
   Using gfortran directly:
