@@ -86,7 +86,7 @@ then you can compile a program one of two ways
 
   $ cafrun -np [X] ./[executable]
 
-  where X is the number of images at program start up.
+  where X is the number of images at program start up.  By default X cannot be larger than the number of physical cores, adding the --oversubscribe flag however lets you add more, just be reasonable about the number of images.
 
 
   Using gfortran directly:
